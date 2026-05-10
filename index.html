@@ -571,6 +571,35 @@ let products = [
   {id:52, name:'Milku Baru Biskuit',     cat:'Makanan', stok:2,  beli:33500, jual:39000, satuan:'pak', min:3},
   {id:53, name:'Teh Botol Sosro Kecil',  cat:'Minuman', stok:2,  beli:42500, jual:49000, satuan:'dus', min:3},
   {id:54, name:'Sosis Sapi So Nice Pak', cat:'Makanan', stok:2,  beli:19000, jual:22000, satuan:'pak', min:3},
+
+  // ── SHAMPO SACHET (dari foto toko) ───────────────────────────────────
+  {id:55, name:'Clear Shampo Sachet',         cat:'Perawatan', stok:20, beli:1200,  jual:1500,  satuan:'pcs', min:10},
+  {id:56, name:'Clear Men Shampo Sachet',      cat:'Perawatan', stok:20, beli:1200,  jual:1500,  satuan:'pcs', min:10},
+  {id:57, name:'Dove Shampo Sachet',           cat:'Perawatan', stok:15, beli:1300,  jual:1600,  satuan:'pcs', min:10},
+  {id:58, name:'Sunsilk Shampo Sachet',        cat:'Perawatan', stok:20, beli:1100,  jual:1400,  satuan:'pcs', min:10},
+  {id:59, name:'Pantene Shampo Sachet',        cat:'Perawatan', stok:25, beli:1300,  jual:1600,  satuan:'pcs', min:10},
+  {id:60, name:'Pantene Anti Ketombe Sachet',  cat:'Perawatan', stok:20, beli:1300,  jual:1600,  satuan:'pcs', min:10},
+  // ── SABUN & PERAWATAN TUBUH (dari foto toko) ─────────────────────────
+  {id:61, name:'Nuvo Sabun Cair Sachet',       cat:'Perawatan', stok:15, beli:1000,  jual:1300,  satuan:'pcs', min:10},
+  {id:62, name:'Giv Sabun Cair Hijab',         cat:'Perawatan', stok:10, beli:18000, jual:22000, satuan:'btl', min:5},
+  {id:63, name:'Lux Sabun Cair',               cat:'Perawatan', stok:10, beli:18000, jual:22000, satuan:'btl', min:5},
+  // ── MAKANAN & SNACK (dari foto toko) ─────────────────────────────────
+  {id:64, name:'Oreo Reguler',                 cat:'Makanan',   stok:24, beli:3500,  jual:4500,  satuan:'pcs', min:10},
+  {id:65, name:'Better Coklat',                cat:'Makanan',   stok:12, beli:2500,  jual:3500,  satuan:'pcs', min:10},
+  {id:66, name:'Chocolatos Wafer',             cat:'Makanan',   stok:20, beli:2000,  jual:2500,  satuan:'pcs', min:10},
+  // ── ROKOK TAMBAHAN (dari rak foto toko) ──────────────────────────────
+  {id:67, name:'Dunhill Merah',                cat:'Rokok',     stok:10, beli:28000, jual:32000, satuan:'pak', min:5},
+  {id:68, name:'Dunhill Isi 16',               cat:'Rokok',     stok:8,  beli:32000, jual:36500, satuan:'pak', min:5},
+  {id:69, name:'Camel Merah',                  cat:'Rokok',     stok:8,  beli:22000, jual:25000, satuan:'pak', min:5},
+  {id:70, name:'Geo Mild Filter',              cat:'Rokok',     stok:10, beli:18000, jual:21000, satuan:'pak', min:5},
+  {id:71, name:'Geo Bold',                     cat:'Rokok',     stok:8,  beli:20000, jual:23000, satuan:'pak', min:5},
+  {id:72, name:'Esse',                         cat:'Rokok',     stok:6,  beli:25000, jual:29000, satuan:'pak', min:3},
+  {id:73, name:'Red & White',                  cat:'Rokok',     stok:8,  beli:18500, jual:21500, satuan:'pak', min:5},
+  // ── MINUMAN SACHET/KOPI (dari foto toko) ─────────────────────────────
+  {id:74, name:'Milo Sachet',                  cat:'Minuman',   stok:20, beli:2500,  jual:3000,  satuan:'pcs', min:10},
+  {id:75, name:'Good Day Kopi Sachet',         cat:'Minuman',   stok:20, beli:1500,  jual:2000,  satuan:'pcs', min:10},
+  {id:76, name:'Torabika Kopi Sachet',         cat:'Minuman',   stok:20, beli:1200,  jual:1500,  satuan:'pcs', min:10},
+  {id:77, name:'Indomilk Sachet',              cat:'Minuman',   stok:15, beli:2000,  jual:2500,  satuan:'pcs', min:10},
 ];
 let masukLog = [
   // Pembelian dari UD. Nitah 1 (Mbak Dhani) - Grosir Rokok Sembako Malang
@@ -630,11 +659,28 @@ let masukLog = [
   {tgl:'2026-05-09',prod:'Teh Botol Sosro Kecil',supplier:'UD. Nitah 1 (Mbak Dhani)',qty:2,total:85000,  ket:'Nota 000909',by:'Admin'},
   {tgl:'2026-05-09',prod:'Sosis Sapi So Nice Pak',supplier:'UD. Nitah 1 (Mbak Dhani)',qty:2,total:38000, ket:'Nota 000909',by:'Admin'},
   {tgl:'2026-05-09',prod:'Samsu Revil 16 Baru Isi 8 Per Slop',supplier:'UD. Nitah 1 (Mbak Dhani)',qty:4,total:103272,ket:'Nota 000909',by:'Admin'},
+  // Pembelian produk perawatan & makanan dari distributor lokal
+  {tgl:'2026-05-09',prod:'Clear Shampo Sachet',        supplier:'Distributor Unilever',qty:20,total:24000, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Clear Men Shampo Sachet',    supplier:'Distributor Unilever',qty:20,total:24000, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Dove Shampo Sachet',         supplier:'Distributor Unilever',qty:15,total:19500, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Sunsilk Shampo Sachet',      supplier:'Distributor Unilever',qty:20,total:22000, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Pantene Shampo Sachet',      supplier:'Distributor P&G',    qty:25,total:32500, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Pantene Anti Ketombe Sachet',supplier:'Distributor P&G',    qty:20,total:26000, ket:'Restock shampo',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Nuvo Sabun Cair Sachet',     supplier:'Distributor Wings',  qty:15,total:15000, ket:'Restock sabun',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Giv Sabun Cair Hijab',       supplier:'Distributor Wings',  qty:10,total:180000,ket:'Restock sabun',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Lux Sabun Cair',             supplier:'Distributor Unilever',qty:10,total:180000,ket:'Restock sabun',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Oreo Reguler',               supplier:'Distributor Nabisco', qty:24,total:84000, ket:'Restock snack',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Better Coklat',              supplier:'Distributor Lokal',   qty:12,total:30000, ket:'Restock snack',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Chocolatos Wafer',           supplier:'Distributor Lokal',   qty:20,total:40000, ket:'Restock snack',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Milo Sachet',                supplier:'Distributor Nestle',  qty:20,total:50000, ket:'Restock minuman',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Good Day Kopi Sachet',       supplier:'Distributor Lokal',   qty:20,total:30000, ket:'Restock kopi',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Torabika Kopi Sachet',       supplier:'Distributor Lokal',   qty:20,total:24000, ket:'Restock kopi',by:'Admin'},
+  {tgl:'2026-05-09',prod:'Indomilk Sachet',            supplier:'Distributor Indofood',qty:15,total:30000, ket:'Restock susu',by:'Admin'},
 ];
 let keluarLog = [];
 let trxLog = [];
 let cart = {};
-let nextId = 55;
+let nextId = 78;
 let editProdukId = null;
 let hapusProdukId = null;
 let chartsRendered = false;
